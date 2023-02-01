@@ -1,46 +1,49 @@
 #parentgrid {
+  height: 100vh;
   display: grid;
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: auto 1fr;
   grid-template-columns: 30% 1fr;
   grid-template-areas:
-      "area1" "area2"
-      "area3" "area_others"
+    "area1" "area2"
+    "area3" "area_others"
 }
 
 #area1 {
+  min-height: 100px;
+  max-height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 #area2 {
+  min-height: 100px;
+  max-height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: baseline;
 }
 
-#area3 {
-
-}
+#area3 {}
 
 #area_others {
-display: flex;
-flex-direction: column;
-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 #area45 {
-display: flex;
-flex-direction: row;
-flex: 50%;
+  display: flex;
+  flex-direction: row;
+  flex: 50%;
 }
 
 #area4 {
-flex: 89.5%;
-display: flex;
-justify-content: center;
-align-items: center;
+  flex: 89.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 tr:nth-child(even) {
@@ -86,11 +89,11 @@ tr:hover {
 }
 
 #myhead {
-    float: right;
-    height: 100px;
-    word-wrap: break-word;
+  float: right;
+  height: 100px;
+  word-wrap: break-word;
 }
 
 #myheadagain {
-    height: 100px;
+  height: 100px;
 }
