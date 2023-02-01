@@ -1,4 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
 #parentgrid {
+  padding: 0;
   height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr;
@@ -9,6 +16,7 @@
 }
 
 #area1 {
+  background: #084a80;
   min-height: 100px;
   max-height: 100px;
   display: flex;
@@ -17,6 +25,7 @@
 }
 
 #area2 {
+  background: #1878c7;
   min-height: 100px;
   max-height: 100px;
   display: flex;
@@ -25,7 +34,9 @@
   align-items: baseline;
 }
 
-#area3 {}
+#area3 {
+  background: #07b388;
+}
 
 #area_others {
   display: flex;
@@ -40,6 +51,7 @@
 }
 
 #area4 {
+  background: #b36807;
   flex: 89.5%;
   display: flex;
   justify-content: center;
@@ -62,6 +74,7 @@ tr:hover {
 }
 
 #area5 {
+  background: #ac7b3c;
   flex: 10.5%;
   display: flex;
   justify-content: center;
@@ -75,17 +88,25 @@ tr:hover {
 }
 
 #area6 {
+  background: #af00a1;
   flex: 10.5%;
 }
 
 #area7 {
+  background: #d452ca;
   flex: 89.5%;
 }
 
 #area8 {
+  background: red;
   size: absolute;
   min-height: 100px;
   max-height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  
 }
 
 #myhead {
