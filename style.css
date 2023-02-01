@@ -1,3 +1,48 @@
+#parentgrid {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:
+        "area1" "area2"
+        "area3" "area_others"
+}
+
+#area_others {
+  display: flex;
+  flex-direction: column;
+}
+
+#area45 {
+  display: flex;
+  flex-direction: row;
+}
+
+#area4 {
+  flex: 89.5%;
+}
+
+#area5 {
+  flex: 10.5%;
+}
+
+#area67 {
+  display: flex;
+  flex-direction: row;
+}
+
+#area6 {
+  flex: 10.5%;
+}
+
+#area7 {
+  flex: 89.5%;
+}
+
+#area8 {
+  display: flex;
+  flex-direction: row
+}
+
 #myhead {
     float: right;
     height: 200px;
