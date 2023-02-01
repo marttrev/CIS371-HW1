@@ -2,11 +2,18 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#topblock {
+  background: yellow;
 }
 
 #parentgrid {
   padding: 0;
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-rows: auto 1fr;
   grid-template-columns: 30% 1fr;
@@ -51,8 +58,8 @@ body {
 }
 
 #area4 {
-  background: #b36807;
-  flex: 89.5%;
+  background: rgb(170, 97, 2);
+  flex: 78.5714286%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,8 +81,8 @@ tr:hover {
 }
 
 #area5 {
-  background: #ac7b3c;
-  flex: 10.5%;
+  background: rgb(189, 124, 38);
+  flex: 21.4285714286%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,13 +95,13 @@ tr:hover {
 }
 
 #area6 {
-  background: #af00a1;
-  flex: 10.5%;
+  background: hsl(294, 100%, 40%);
+  flex: 21.4285714286%;
 }
 
 #area7 {
-  background: #d452ca;
-  flex: 89.5%;
+  background: hsl(294, 100%, 70%);
+  flex: 78.5714286%;
 }
 
 #area8 {
