@@ -119,5 +119,5 @@ tr:hover {
 #myhead {
   float: right;
   height: 100px;
-  word-wrap: break-word;
+  padding: 5px 5px 5px 5px;
 }

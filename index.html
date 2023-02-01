@@ -14,19 +14,23 @@
 
 		<p1>
 			This is an incredibly long paragraph, designed such that it will eventually wrap
-			around the picture of my face that's sitting on the right side of this HTML page.
+			around the picture of my face that's sitting on the right side of this HTML page. Isn't
+			this such an incredibly fun piece of writing to be contained within this box? I love it.
 			I'm not sure at what point I should stop typing this text, so I'm just going to
 			keep it up for a little while. Perhaps I can fill the space with the US Constitution.
 			We the people of the United States of America, in order to form a more perfect
 			union, establish justice, ensure domestic tranquility, provide for the common defense,
-			promote the general welfare - okay surely that's enough.
+			promote the general welfare and secure the Blessings of Liberty to ourselves and our
+			Posterity, do ordain and establish this Constitution for the United States of America -
+			okay surely that's enough.
 		</p1>
 
 		<p2>
 			Since you specified "one or more paragraphs," here's the optional text continuing from
 			the first paragraph, only with a p2 tag so as to make things more interesting for me.
 			I imagine the first one has already wrapped the image, so I won't type nearly as much
-			in this one.
+			in this one. Still, this is a fun bit of text as well, and the fact that it looks different
+			from the last one behind the scenes despite looking so similar on the page is so exciting!
 		</p2>
 	</div>
 	<div id="parentgrid">
@@ -46,7 +50,72 @@
 		</div>
 
 		<div id="area3">
-			This is where the writeup will go when we get there. Hoorah.
+			<li>
+				First, the top of the page contains the header requested in the assignment
+				description. My name is written as a heading, using the &lt;h1&gt; tag, and
+				the CSS uses the float: right property, applied to the image by id #myhead. Finally,
+				there is a paragraph of text, wrapped in &lt;p1&gt; and &lt;p2&gt; tags, that is long enough
+				to collide with my image. Thanks to the float property, the text wraps the image.
+			</li>
+			<li>
+				Within area 1 resides the same image of myself with a different ID. It is centered by giving area 1 the
+				display: flex property and then the justify-content: center property. This sets the
+				layout to flexbox and aligns on the major axis, defined with flex-direction: row. The
+				image in HTML has the attribute height="100px" to ensure it fits the area.
+			</li>
+			<li>
+				Within area 2, the same heading technique displays my name as used before, and the
+				&lt;h2&gt; tag displays my (fake) phone number in smaller text. A phone icon is added
+				from the icon repository at <a href="https://fontawesome.com/">fontawesome.com</a>. They provided a
+				script to include that
+				would allow access to a vast array of icons, some of which I used in this page. The
+				icons are embedded with the &lt;i&gt; tag by convention.
+			</li>
+			<li>
+				Area 4 uses a table. The &lt;table&gt; tag contains the table, with &lt;tr&gt; tags
+				containing row data and &lt;td&gt; tags containing cell data within each row. By
+				applying style info to the pseudoclass tr:nth-child(even) or tr:nth-child(odd), we
+				can style every other tr element a specific way, giving us alternating colors. We can
+				also use tr:hover to determine the style of tr elements when hovered over.
+			</li>
+			<li>
+				Area 5 is very similar to area 1, only the image has no size, and the vertical axis
+				is also constrained using align-items: center.
+			</li>
+			<li>
+				Area 6 uses &lt;li&gt; tags contained within a &lt;ul&gt; tag to produce an unordered list of five
+				items. Each item is wrapped in an &lt;a&gt; tag that allows it to link out to the website
+				of the company named in the list, whose url is specified with the href attribute.
+			</li>
+			<li>
+				Area 7 wraps paragraphs of text in three separate &lt;p&gt; tags, and within each one,
+				a different style of text is used. The first uses bold, wrapped in &lt;b&gt; tags, the
+				second uses italics, wrapped in &lt;i&gt; tags, and the third uses code formatting,
+				wrapped in &lt;code&gt; tags.
+			</li>
+			<li>
+				Reusing the icon library and the same approach as before, Area 8 applies &lt;a&gt; tags
+				to each icon to allow them to link out to their respective websites. Additionally, justify-content:
+				space-evenly
+				is applied to ensure the icons are spaced evenly throughout the area.
+			</li>
+			<li>
+				To size each area, a grid container is used. The container has two rows, the first auto-sized,
+				the second filling the remaining space using 1fr. It also has two columns, the first 30% wide, the
+				second
+				filling the remaining space. Areas 1/2 are sized to 100px in height, which the auto size adapts to.
+			</li>
+			<li>The bottom-right cell
+				is further divided into a flexbox with column orientation, which fills 100% of the available space. It
+				contains
+				two flexboxes for areas 4/5 and 6/7. These are row-oriented, fill 50% of the available space each, and
+				contain
+				the two areas as children. Areas 5/6 have their flex property set to ~21.4%, which resolves to about 15%
+				of the
+				canvas width when the parent flexboxes are 70% wide. Finally, area 8 resides at the bottom of this column-oriented 
+				flexbox, with height fixed at 100px. That means the other two boxes will adapt to fill 50% of the remaining space 
+				after those 100px are accounted for.
+			</li>
 		</div>
 
 		<div id="area_others">
