@@ -51,7 +51,58 @@ for (var course of myCourses) {
         rowElement3.appendChild(semestText)	
 	}
     table.appendChild(row)
-    tArea4.appendChild(table)
-	
+    tArea4?.appendChild(table)
+}
 
+type Company = {
+    name: string,
+    abbrev: string,
+    url: string
+}
+
+const myCompanies: Array<Company> = [
+    {name: "Consumer Value Stores", abbrev: "CVS", url: "https://www.cvs.com/"},
+    {name: "International Business Machines", abbrev: "IBM", url: "https://www.ibm.com/"},
+    {name: "Kentucky Fried Chicken", abbrev: "KFC", url: "https://www.kfc.com/"},
+    {name: "United Parcel Service", abbrev: "UPS", url: "https://www.ups.com/"},
+    {name: "Extreme Effects", abbrev: "XFX", url: "https://www.xfxforce.com/"}
+]
+
+const area6 = document.getElementById("area6")
+const list = document.createElement("ul")
+for (var company of myCompanies) {
+    const aElement = document.createElement("a")
+    aElement.setAttribute("href", company.url)
+    const listItem = document.createElement("li")
+    const textNode = document.createTextNode(`${company.abbrev} - ${company.name}`)
+
+    list.appendChild(aElement)
+    aElement.appendChild(listItem)
+    listItem.appendChild(textNode)
+}
+area6?.appendChild(list)
+
+type SocialMedia = {
+    icon: string;
+    url: string;
+}
+
+const mySocialMedias: Array<SocialMedia> = [
+    {icon: "fa-brands fa-twitter", url: "https://www.twitter.com/"},
+    {icon: "fa-brands fa-facebook", url: "https://www.facebook.com/"},
+    {icon: "fa-brands fa-instagram", url: "https://www.instagram.com/"},
+    {icon: "fa-brands fa-github", url: "https://www.github.com/"},
+    {icon: "fa-brands fa-pinterest", url: "https://www.pinterest.com/"},
+    {icon: "fa-brands fa-amazon", url: "https://www.amazon.com/"},
+    {icon: "fa-brands fa-google", url: "https://www.google.com/"}
+]
+
+const area8 = document.getElementById("area8")
+for (var social of mySocialMedias) {
+    const aElement = document.createElement("a")
+    aElement.setAttribute("href", social.url)
+    const iElement = document.createElement("i")
+    iElement.setAttribute("class", social.icon)
+    aElement.appendChild(iElement)
+    area8?.appendChild(aElement)
 }
